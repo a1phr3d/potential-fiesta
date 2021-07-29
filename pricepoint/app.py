@@ -7,12 +7,16 @@ from dash.dependencies import Output, Input
 from builtins import round
 
 
+
+
+
 data = pd.read_csv("stockScreen.csv")
 symbols = pd.unique(data['stock'])[:5]
 price_indicator = 'Close'
 period = 90
 
-       
+mr = []
+p_columns = ('Symbol', '% Change', '% Relative Max', '% Relative Min')
 for symbol in symbols:
     filtered_data = data[data['stock'] == symbol]
     filtered_data = filtered_data.iloc[-period:]
@@ -27,4 +31,7 @@ for symbol in symbols:
     percent_rel_min  = round(((latest_price - min_price)/min_price) * 100, 2)
     
     tupOut = (symbol, percent_change, percent_rel_max, percent_rel_min)
-    print(tupOut)
+    mr.append(tupOut)
+
+outp = pd.DataFrame(mr, columns=p_columns)
+print(outp)

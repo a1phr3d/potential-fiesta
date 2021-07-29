@@ -1,0 +1,53 @@
+Leverage the powerful functionality provided by a number of 
+Python packages to develop and backtest a quantitative trading strategy.
+
+
+
+pyZen =
+"""
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+"""
+
+pyBestPractice =
+"""
+In this example, we are dealing with multiple layers of code. 
+THIS IS HARD TO READ. The problem I found in this code is that it is mixing 
+the administrative logic (the with, try-except) with the 
+business logic (the for, if) by giving them the indentation ubiquitously. 
+If you are disciplined about using indentation only for administrative logic, 
+your core business logic would stand out immediately.
+"""
+
+furtherLinks = 
+"""
+https://medium.com/python-pandemonium/never-write-for-loops-again-91a5a4c84baf
+https://www.geeksforgeeks.org/generator-expressions/
+https://dbader.org/blog/python-generator-expressions https://realpython.com/python-dash/ https://www.geeksforgeeks.org/generator-expressions/
+https://medium.com/python-pandemonium/never-write-for-loops-again-91a5a4c84baf
+"""
+
+quotes = 
+"""
+“The stock market is filled with individuals who know the price of everything, but the value of nothing.” — Fischer
+“A prediction about the direction of the stock market tells you nothing about where stocks are headed, but a whole lot about the person doing the predicting.” — Warren Buffet
+"""
